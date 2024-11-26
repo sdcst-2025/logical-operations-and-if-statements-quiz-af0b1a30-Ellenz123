@@ -1,8 +1,8 @@
 #!python3
 
-x = input()
+x = input("Enter a number:")
 print(x)
-exit()
+#exit()
 """
 Q1. 
 Modify line 3 so that the program asks the user to "Enter a number"
@@ -11,9 +11,9 @@ the exit() command and move on to the next question
 """
 
 x = 38.4521
-x = round(x)
+x = round(x,2)
 print(x)
-exit()
+#exit()
 """
 Q2.
 Modify line 14 so that the value of x is rounded to 2 decimal places
@@ -23,9 +23,9 @@ the exit() command and move on to the next question
 
 
 x = 3.0
-x = x
-print( x * "hello")
-exit()
+x = int(x)
+print(x * "hello")
+#exit()
 
 """
 Q3.
@@ -34,24 +34,26 @@ the output "hellohellohello"
 When you are done, add '#' to the beginning of line 28 to comment out
 the exit() command and move on to the next question
 """
-
-x = 4
-if :
+x=input("Enter a number:")
+x = int(x)
+if x > 3:
     print("x is greater than 3")
-exit()
+else:
+    print("x is not greater than 3")
+#exit()
 """
 Q4.
 Have line 39 check to see if x is greater than 3
 When you are done, add '#' to the beginning of line 41 to comment out
 the exit() command and move on to the next question
 """
-x = 5
-if :
+x = input("Enter a number:")
+x=int(x)
+if x > 5:
     print("x is greater than 5")
-#
+else:
     print("x is not greater than 5")
-print()
-exit()
+#exit()
 """
 Q5.
 Modify line 49 and 51 to check if x is greater than 5 and do a different block if it isnt'
@@ -59,12 +61,16 @@ When you are done, add '#' to comment out the exit() command
 and move on to the next question
 """
 
-x = 3
-y = 4
-if:
+x = input("Enter a number:")
+x=float(x)
+y = input("Enter another number:")
+y=float(y)
+if x==3 and y==4:
     print("x is 3 and y is 4")
+else:
+    print("x is not 3 and y is not 4 ")
 
-exit()
+#exit()
 """
 Q6.
 Modify line 64 so that the program checks the values of both x and y
@@ -72,12 +78,13 @@ When you are done, add '#' to comment out
 the exit() command and move on to the next question
 """
 
-x = 10
+x = input("Enter a number:")
+x=float(x)
 if x == 10:
-print("x is 10")
-print("10 is stored in x")
-#
-print("x is not 10")
+    print("x is 10 and 10 is stored in x")
+else:
+    print("x is not 10")
+#exit()
 """
 Q7.
 Modify lines 77-80 so that 77 and 78 are printed if x = 10 and line 80 is executed
@@ -86,10 +93,15 @@ When you are done, add '#' to comment out
 the exit() command and move on to the next question
 """
 
-x = 8
-y = 8
-if:
+x = input("Enter a number:")
+x = float(x)
+y = input("Enter another number:")
+y = float(y)
+if x<8 or y<8:
     print("at least one number is less than 8")
+else:
+    print("not at least one number is less than 8")
+#exit()
 """
 Q8.
 Modify line 91 to check if at least one number is less than 8
